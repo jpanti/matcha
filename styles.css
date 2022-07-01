@@ -3,8 +3,11 @@ body {
 }
 
 h1{
-    color: #46484c;
+    color: #025157;
     text-align: center;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
 }
 
 p {
@@ -44,8 +47,8 @@ li{
 }
 
 .navbar{
-    width: 70%;
-    text-align: left;
+    /* width: 70%; */
+    text-align: center;
     color: #025157;
     font-weight: 500;
     
@@ -53,15 +56,14 @@ li{
 }
 
 .actions{
-    width: 15%;
-    text-align: left;
+    /* width: 15%; */
+    text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
 
 .actions >* {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .actions a{
@@ -88,6 +90,9 @@ li{
     text-align: center;
 }
 
+.main img {
+    max-height: 200px;
+}
 .publish{
     margin-left: 30px;
 }
@@ -190,7 +195,7 @@ li{
     flex: 1;
     max-width: 370px;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
 }
 
@@ -413,11 +418,7 @@ li{
 
 }
 
-@media (max-width:575px){
-    body{
-        background-color: yellow;
-    }
-}
+
 
 .como-funciona .carteles .carteles1 .carteles1-imagenes {
     display: flex;
@@ -450,4 +451,220 @@ li{
 
 .como-funciona .carteles .carteles1 .carteles1-body a {
     color: #67b54b;
+}
+
+/* @media (max-width:575px){
+    body{
+        background-color: yellow;
+    }
+} */
+
+.success-stories {
+    background-color: #A1D683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+  }
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+  .success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+  }
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .card .card-body .results p {
+    margin: 0;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+  .success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+  }
+  
+  /* Los círculos deben recibir la imagen y ajustarla al tamaño */
+  .success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+
+
+@media (max-width:575px) {
+   /*  .navbar,
+    .actions {
+        display: none;
+    } */
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+
+    .banner > img {
+        width: 100%;
+    }
+
+    .promo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .promo .explanatory-video img {
+        width: 10%;
+    }
+
+    .promo .publish  {
+        margin-left: 0;
+        
+    }
+
+    .promo .publish h3 {
+        font-size: 35px;
+    }
+
+    .promo .publish p {
+        font-size: 20px;
+    }
+
+    .promo .publish form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   .promo .publish .forma-correo .correo {
+        height: 70px;
+      
+   }
+
+   .promo .publish .forma-correo .correo input {
+        height: 50px;
+        width: 60%;
+        border-radius: 5%;
+
+   }
+
+   .promo .publish .forma-correo .correo button {
+    height: 60px;
+    width: 30%;
+    padding-left: 0;
+    border-radius: 5%;
+   }
+
+   .features{
+    grid-template: repeat(4, 1fr) / repeat(1,1fr) ;
+    height: auto;
+   }
+
+   .feature-image {
+    display: none;
+   }
 }
